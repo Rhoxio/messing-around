@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import { useAppDispatch, useAppSelector } from "./app/hooks"
-import {incremented, amountAdded } from "./features/counter/counter-slice"
-import {useFetchBreedsQuery} from "./features/dogs/dogsApiSlice"
 
 import {useFetchPokemonQuery} from "./features/pokemon/pokemonApi"
 import './App.css'
