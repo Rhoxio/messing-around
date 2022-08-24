@@ -6,16 +6,11 @@ import {useFetchPokemonQuery} from "./features/pokemon/pokemonApi"
 import './App.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
-  // const count = useAppSelector((state) => state.counter.value)
+  
   const dispatch = useAppDispatch();
 
   const [pokemonName, setPokemon] = useState("charizard")
   const {data, error, isLoading} = useFetchPokemonQuery(pokemonName)
-
-  // function handleClick(){
-  //   dispatch(amountAdded(5))
-  // }
 
   function handleInput(event){
     dispatch(setPokemon(event.target.value))
