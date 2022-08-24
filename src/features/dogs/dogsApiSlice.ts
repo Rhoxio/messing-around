@@ -11,7 +11,7 @@ interface Breed {
 }
 
 export const apiSlice = createApi({
-  reducerPath: 'api',
+  reducerPath: 'apix',
   baseQuery: fetchBaseQuery({
     baseUrl: "https://api.thedogapi.com/v1",
     prepareHeaders(headers){
