@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import { useAppDispatch, useAppSelector } from "./app/hooks"
-
-import {useFetchPokemonQuery} from "./features/pokemon/pokemonApi"
 import './App.css'
 
+import {useFetchPokemonQuery} from "./features/pokemon/pokemonApi"
+
+
 function App() {
-  
+
   const dispatch = useAppDispatch();
 
   const [pokemonName, setPokemon] = useState("charizard")
